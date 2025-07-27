@@ -15,7 +15,7 @@ function setupEventListeners() {
   // Dashboard button
   document.getElementById('view-dashboard').addEventListener('click', () => {
     // Open web dashboard
-    chrome.tabs.create({ url: 'http://localhost:5173' }); // Will be your web app URL
+    chrome.tabs.create({ url: 'https://dynamic-cannoli-f63ca5.netlify.app' }); // Will be your web app URL
   });
 
   // Settings checkboxes
