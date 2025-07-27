@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Legal Billables AI</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="popup-container">
+    <div class="header">
+      <h1>⚖️ Legal Billables AI</h1>
+      <p>Your AI-powered time tracking assistant</p>
+    </div>
+    
+    <div class="stats-section">
+      <div class="stat-card">
+        <div class="stat-number" id="today-hours">2.4</div>
+        <div class="stat-label">Hours Today</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number" id="week-revenue">$2,450</div>
+        <div class="stat-label">Week Revenue</div>
+      </div>
+    </div>
+    
+    <div class="recent-entries">
+      <h3>Recent Entries</h3>
+      <div class="entry-list" id="entry-list">
+        <div class="entry-item">
+          <div class="entry-time">0.3 hrs</div>
+          <div class="entry-desc">Email to Johnson Corp re: contract review</div>
+          <div class="entry-status synced">✓</div>
+        </div>
+        <div class="entry-item">
+          <div class="entry-time">0.2 hrs</div>
+          <div class="entry-desc">Client correspondence - Estate planning</div>
+          <div class="entry-status pending">⏳</div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="quick-actions">
+      <button id="manual-entry" class="action-btn primary">
+        + Manual Entry
+      </button>
+      <button id="view-dashboard" class="action-btn secondary">
+        📊 Dashboard
+      </button>
+    </div>
+    
+    <div class="settings-section">
+      <div class="setting-item">
+        <label class="setting-label">
+          <input type="checkbox" id="auto-tracking" checked>
+          Auto-track email time
+        </label>
+      </div>
+      <div class="setting-item">
+        <label class="setting-label">
+          <input type="checkbox" id="ai-summaries" checked>
+          AI-generated summaries
+        </label>
+      </div>
+    </div>
+  </div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>
