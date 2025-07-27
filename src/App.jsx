@@ -10,7 +10,7 @@ function App() {
   useEffect(() => {
     async function fetchEntries() {
       try {
-        const response = await fetch('http://localhost:3001/entries');
+        const response = await fetch('https://billable-extension-backend.onrender.com/entries');
         const data = await response.json();
 
         if (data.success && Array.isArray(data.entries)) {
