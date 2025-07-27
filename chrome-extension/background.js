@@ -27,7 +27,7 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
 });
 
 async function generateAISummary(emailData) {
-  const response = await fetch("http://localhost:3001/summarize", {
+  const response = await fetch("https://billable-extension-backend.onrender.com/summarize", {
     method: "POST",
     headers: {
       "Content-Type": "application/json"
@@ -65,7 +65,7 @@ function cleanSummary(summary) {
 
 async function saveToPracticePanther(billableData) {
   try {
-    const response = await fetch('http://localhost:3001/log', {
+    const response = await fetch('https://billable-extension-backend.onrender.com/log', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
