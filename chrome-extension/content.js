@@ -322,7 +322,7 @@ class LegalBillablesTracker {
     console.log('▶️ saveToPracticePanther clicked', entryData);
     this.showNotification('Saving to backend...', 'info');
 
-    const response = await fetch('http://localhost:3001/log', {
+    const response = await fetch('https://billable-extension-backend.onrender.com/log', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
